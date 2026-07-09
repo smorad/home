@@ -107,6 +107,37 @@
   }
 }
 
+.list__item--with-teaser {
+  clear: both;
+  margin-bottom: 1.5em;
+}
+
+.archive__item--with-teaser {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.archive__item-teaser--publication {
+  width: 160px;
+  height: 120px;
+  flex: 0 0 160px;
+  margin: 0;
+
+  img {
+    display: block;
+    width: 160px;
+    height: 120px;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.archive__item--with-teaser .archive__item-body {
+  flex: 1;
+  min-width: 0;
+}
+
 
 /*
    Grid view

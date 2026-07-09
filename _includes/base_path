@@ -3,3 +3,6 @@
 {% else %}
   {% assign base_path = site.github.url %}
 {% endif %}
+{% if base_path contains "0.0.0.0" %}
+  {% assign base_path = site.baseurl | default: "" %}
+{% endif %}

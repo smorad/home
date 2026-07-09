@@ -117,6 +117,14 @@ author:
   wikipedia        :
 
 
+# Publication Category - The following the list of publication categories and their headings
+publication_category:
+  conferences:
+    title: 'Papers'
+  patents:
+    title: 'Patents'
+
+
 # Reading Files
 include:
   - .htaccess

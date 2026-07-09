@@ -1,8 +1,14 @@
 ---
 title: "Recurrent Reinforcement Learning with Memoroids"
 collection: publications
+category: conferences
+tags:
+  - reinforcement learning
+  - memory
+header:
+  teaser: "tbb.png"
 permalink: /publication/2024-09-26-memoroids
-excerpt: 
+excerpt: "Revisiting how we model and train memory in RL"
 date: 2024-09-26
 venue: Thirty-eighth Conference on Neural Information Processing Systems
 paperurl: 

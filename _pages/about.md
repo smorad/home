@@ -14,5 +14,3 @@ I am currently an assistant professor of AI at the University of Macau, and head
 My research focus is on applying deep reinforcement learning to partially observable Markov decision processes (POMDPs) using recurrent models. In other words, I am working to endow intelligent agents with long-term memory capabilities, enabling reasoning under the uncertainty present in the real world.
 
 Under a more philosophical lens, I believe that long-term memory is necessary for truly intelligent agents. Our personality, our decisions -- who we ultimately are as people is conditioned on a lifetime of individual experiences. How can you learn from your successes and failures, if you can't remember them?
-
-I am currently looking to hire PhD students to work on deep reinforcement learning and robotics. If you are interested, please send an email to smorad at um dot edu dot mo.

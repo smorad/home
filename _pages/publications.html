@@ -1,0 +1,47 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+{% include group-by-array collection=site.publications field="tags" %}
+
+<p class="page__taxonomy publication-tag-filter-bar">
+  <strong><i class="fa fa-fw fa-filter" aria-hidden="true"></i> Filter by tag:</strong>
+  <a href="{{ base_path }}/publications/" class="page__taxonomy-item publication-tag-filter is-active" data-tag="all">All</a>
+  {% for tag in group_names %}
+    <a href="{{ base_path }}/publications/#{{ tag | slugify }}" class="page__taxonomy-item publication-tag-filter" data-tag="{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+  {% endfor %}
+</p>
+
+<div id="publication-list">
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    <section class="publication-category">
+      {% assign title_shown = false %}
+      {% for post in site.publications reversed %}
+        {% if post.category != category[0] %}
+          {% continue %}
+        {% endif %}
+        {% unless title_shown %}
+          <h2>{{ category[1].title }}</h2><hr />
+          {% assign title_shown = true %}
+        {% endunless %}
+        {% include archive-single.html %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+</div>
+
+<script src="{{ base_path }}/assets/js/publication-tags.js"></script>

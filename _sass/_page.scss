@@ -274,6 +274,12 @@
     text-decoration: none;
     color: $link-color-hover;
   }
+
+  &.publication-tag-filter.is-active {
+    font-weight: bold;
+    border-color: $link-color;
+    color: $link-color;
+  }
 }
 
 

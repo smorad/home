@@ -1,17 +1,24 @@
 ---
 title: "A framework for real-world multi-robot systems running decentralized GNN-based policies"
 collection: publications
+category: conferences
+tags:
+  - robotics
+  - multi-agent
+  - graph neural networks
+header:
+  teaser: "jan-gnn.png"
 permalink: /publication/2022-05-23-gnn-framework
-excerpt: 
+excerpt: "Running a distributed robot system using a GNN"
 date: 2022-05-23
 venue: 2022 International Conference on Robotics and Automation (ICRA)
 paperurl: 
 citation: 
 ---
 
-[IEEExplore](https://ieeexplore.ieee.org/abstract/document/9811744)
+[Arxiv](https://arxiv.org/abs/2111.01777), [IEEExplore](https://ieeexplore.ieee.org/abstract/document/9811744)
 
-Running a distributed robot system using a GNN
+Running a distributed robot system in real-time using a GNN
 
 ```
 @inproceedings{blumenkamp2022framework,

@@ -1,7 +1,11 @@
 {% include base_path %}
 
 {% if site.tag_archive.type and page.tags[0] %}
-  {% include tag-list.html %}
+  {% if page.collection == 'publications' %}
+    {% include publication-tag-list.html %}
+  {% else %}
+    {% include tag-list.html %}
+  {% endif %}
 {% endif %}
 
 {% if site.category_archive.type and page.categories[0] %}
