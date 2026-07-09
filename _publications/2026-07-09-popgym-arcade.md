@@ -11,7 +11,7 @@ tags:
 permalink: /publication/2025-03-01-popgym-arcade
 header:
   teaser: arcade.png
-excerpt: "Tools and a GPU-accelerated benchmark for analyzing memory in partially observable reinforcement learning"
+excerpt: "Investigating how and what deep policies learn under partial observability"
 date: 2026-07-09
 venue: International Conference on Machine Learning (Spotlight, Top 2.2%)
 paperurl: 
