@@ -5,6 +5,7 @@ category: conferences
 tags:
   - reinforcement learning
   - robotics
+  - deep learning
 permalink: /publication/2026-01-20-explore-to-learn
 header:
   teaser: synergy.png

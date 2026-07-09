@@ -7,6 +7,7 @@ tags:
   - memory
   - partial observability
   - computer vision
+  - deep learning
 permalink: /publication/2025-03-01-popgym-arcade
 header:
   teaser: arcade.png

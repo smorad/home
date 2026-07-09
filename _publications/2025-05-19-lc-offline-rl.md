@@ -7,6 +7,7 @@ tags:
   - robotics
   - multi-agent
   - navigation
+  - deep learning
 permalink: /publication/2025-05-19-lc-offline-rl
 header:
   teaser: offline-marl.png
