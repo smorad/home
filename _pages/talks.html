@@ -1,9 +1,11 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks"
 permalink: /talks/
 author_profile: true
 ---
+
+{% include base_path %}
 
 {% if site.talkmap_link == true %}
 
@@ -11,6 +13,24 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{% if site.talk_category %}
+  {% for category in site.talk_category %}
+    <section class="talk-category">
+      {% assign title_shown = false %}
+      {% for post in site.talks reversed %}
+        {% if post.category != category[0] %}
+          {% continue %}
+        {% endif %}
+        {% unless title_shown %}
+          <h2>{{ category[1].title }}</h2><hr />
+          {% assign title_shown = true %}
+        {% endunless %}
+        {% include archive-single-talk.html %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+{% else %}
+  {% for post in site.talks reversed %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+{% endif %}

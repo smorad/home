@@ -1,6 +1,7 @@
 ---
 title: "Deep Decision Making"
 collection: talks
+category: guest_lecture
 type: "Guest Lecture"
 permalink: /talks/2025-01-01-stgc-deep-decision
 venue: "University of Macau STGC 8003"

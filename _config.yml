@@ -124,6 +124,20 @@ publication_category:
   patents:
     title: 'Patents'
 
+teaching_category:
+  instructor:
+    title: 'Instructor'
+  ta:
+    title: 'Teaching Assistant'
+
+talk_category:
+  conference:
+    title: 'Conferences & Workshops'
+  invited:
+    title: 'Invited Talks'
+  guest_lecture:
+    title: 'Guest Lectures'
+
 
 # Reading Files
 include:
@@ -189,9 +203,6 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -235,15 +246,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _talks
   - scope:
       path: ""

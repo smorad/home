@@ -49,14 +49,34 @@ redirect_from:
   {% endfor %}</ul>
   
 ## Talks
+{% if site.talk_category %}
+  {% for category in site.talk_category %}
+### {{ category[1].title }}
+  <ul>{% for post in site.talks reversed %}
+    {% if post.category != category[0] %}{% continue %}{% endif %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}</ul>
+  {% endfor %}
+{% else %}
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
+{% endif %}
   
 ## Teaching
+{% if site.teaching_category %}
+  {% for category in site.teaching_category %}
+### {{ category[1].title }}
+  <ul>{% for post in site.teaching reversed %}
+    {% if post.category != category[0] %}{% continue %}{% endif %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  {% endfor %}
+{% else %}
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+{% endif %}
 
 ## Thesis Supervision
 * Yutao Chen, PhD, *Deep Mixture Modeling with Natural Gradients*, Macau (2025–)

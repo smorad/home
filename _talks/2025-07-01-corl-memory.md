@@ -1,6 +1,7 @@
 ---
 title: "Understanding and Benchmarking Memory in RL"
 collection: talks
+category: conference
 type: "Talk"
 permalink: /talks/2025-07-01-corl-memory
 venue: "Conference on Robot Learning – RemembeRL Workshop"
